@@ -1,0 +1,363 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body{
+    height: 130rem;
+}
+
+:root{
+    --color-principal : #75bb86;
+    --color-principal-dos: #e8db86;
+    --negro: #000000;
+    --blanco: #ffffff;
+
+}
+
+/* HEADER */
+
+   .contenedor {
+       background: linear-gradient(to bottom, rgba(234, 224, 161, 0.8), rgba(139, 201, 126, 0.8));
+   }
+
+   .contenedor-secundario {
+       background-image: url(/IMG/pexels-alleksana-6400028.jpeg);
+       height: 50rem;
+       background-position: center bottom;
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-image: linear-gradient(to bottom, rgba(187, 199, 175, 0.3),
+               rgba(122, 205, 143, 0.1)),
+           url(/IMG/pexels-alleksana-6400028.jpeg);
+   }
+
+   .header--menu {
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+       gap: 10rem;
+   }
+
+
+   .header--menu a {
+       text-decoration: none;
+       background: linear-gradient(#d5c872, rgb(196, 199, 196));
+       -webkit-background-clip: text;
+       color: transparent;
+       font-size: 1rem;
+       font-family: 'Prompt', sans-serif;
+       margin: 1rem;
+   }
+
+
+
+   .titulo h1 a {
+       color: #467852;
+       font-family: 'Tilt Prism', cursive;
+       font-size: 1.8rem;
+   }
+
+
+   .parrafo {
+       font-size: 3rem;
+       margin-top: 10rem;
+       margin-left: 5rem;
+       font-family: 'Playfair Display', serif;
+   }
+
+   .parrafo span {
+       color: #d5c872;
+   }
+
+/* DESCRIPCIÓN */
+
+.descripcion{
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 4rem;
+}
+
+.descripcion span{
+    background: linear-gradient(#323432 ,#75bb86);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.8rem;
+}
+
+hr{
+    border: #000000 solid 0.1rem;
+    width: 10%;
+}
+
+
+/* BOTON */
+
+.btn{
+        border-radius: 4px;
+        background: linear-gradient(to bottom, rgba(11, 11, 11), rgba(96, 90, 90, 0.9));
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 0.7rem;
+        padding: 0.7rem;
+        width: 10rem;
+        transition: all 0.5s;
+        cursor: pointer;
+        position: absolute;
+        top: 60%;
+        right: 80%;
+}
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn:hover span {
+    padding-right: 22px;
+}
+
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#bienvenido{
+    margin-top: 5rem;
+}
+
+
+
+/* ASIDE */
+
+
+
+.imagen-aside{
+    width: 30rem;
+    height: 60rem;
+    opacity: 0.8;
+    object-fit: cover;
+}
+
+.aside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.aside p{
+    font-size: 1.6rem;
+    line-height: 4rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+@media (min-width: 1440px) {
+    
+
+    html {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+    
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+    
+        body {
+            height: 130rem;
+        }
+
+    /* HEADER */
+
+        .contenedor{
+            background: linear-gradient(to bottom, rgba(234, 224, 161, 0.8),rgba(139, 201, 126, 0.8));
+        }
+    
+        .contenedor-secundario{
+            background-image: url(/IMG/pexels-alleksana-6400028.jpeg);
+            height: 90rem;
+            background-position: left center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: linear-gradient(to bottom, rgba(187, 199, 175, 0.3),
+            rgba(122, 205, 143, 0.1)),
+            url(/IMG/pexels-alleksana-6400028.jpeg);
+        }
+    
+        .header--menu{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30rem;
+        }
+        
+            
+        .header a{
+            text-decoration: none;
+            background: linear-gradient(#d5c872, rgb(196, 199, 196));
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 1.4rem;
+            font-family: 'Prompt', sans-serif;
+        }
+
+        
+    
+        .titulo h1 a{
+            color: #467852;
+            font-family: 'Tilt Prism', cursive;
+            font-size: 3rem;
+        }
+
+
+        .parrafo{
+            font-size: 4rem;
+            margin-top: 20rem;
+            margin-left: 15rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .parrafo span{
+            color: #d5c872;
+        }
+    
+        /* DESCRIPCIÓN */
+    
+        .descripcion {
+            font-size: 2rem;
+            text-align: center;
+            line-height: 5.5rem;
+            
+        }
+    
+        .descripcion span {
+            background: linear-gradient(var(--color-principal), var(--color-principal-dos));
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 2.4rem;
+        }
+    
+        hr {
+            border: #000000 solid 0.2rem;
+            width: 10%;
+        }
+    
+        /* ASIDE */
+    
+    
+    
+        .imagen-aside {
+            margin-top: 4rem;
+            width: 30rem;
+            height: 60rem;
+            opacity: 0.8;
+            object-fit: cover;
+        }
+    
+        .aside {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4rem;
+            flex-wrap: wrap;
+        }
+    
+        .aside p {
+            font-size: 1.6rem;
+            line-height: 3rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+    
+        .imagen-aside-dos {
+            width: 80rem;
+            height: 30rem;
+            opacity: 0.8;
+            object-fit: cover;
+        }
+
+                .btn {
+                    border-radius: 4px;
+                    background-color: #000000;
+                    border: none;
+                    color: #FFFFFF;
+                    text-align: center;
+                    font-size: 1rem;
+                    padding: 1rem;
+                    width: 10rem;
+                    transition: all 0.5s;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 55%;
+                    right: 82%;
+                }
+        
+                .btn span {
+                    cursor: pointer;
+                    display: inline-block;
+                    position: relative;
+                    transition: 0.5s;
+                    font-family: 'Quicksand', sans-serif;
+                }
+        
+                .btn span:after {
+                    content: '\00bb';
+                    position: absolute;
+                    opacity: 0;
+                    top: 0;
+                    right: -20px;
+                    transition: 0.5s;
+                }
+        
+                .btn:hover span {
+                    padding-right: 22px;
+                }
+        
+                .btn:hover span:after {
+                    opacity: 1;
+                    right: 0;
+                }
+        
+                .btn a {
+                    text-decoration: none;
+                    color: #FFFFFF;
+                }
+        
+                #bienvenido {
+                    margin-top: 5rem;
+                }
+
+        
+        
+}
+
+

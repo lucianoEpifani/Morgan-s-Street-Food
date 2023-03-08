@@ -3,6 +3,12 @@ html {
     scroll-behavior: smooth;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
 *,
 *:before,
 *:after {
@@ -42,26 +48,42 @@ body{
        display: flex;
        justify-content: space-evenly;
        align-items: center;
-       gap: 10rem;
+       gap: 6rem;
    }
 
 
-   .header--menu a {
+   .navegacion a{
        text-decoration: none;
-       background: linear-gradient(#d5c872, rgb(196, 199, 196));
+       background: linear-gradient(#ffffff, rgb(255, 255, 255));
        -webkit-background-clip: text;
        color: transparent;
        font-size: 1rem;
-       font-family: 'Prompt', sans-serif;
+       font-family: 'Raleway', sans-serif;
        margin: 1rem;
+       text-shadow: 0px 3px 10px rgb(00, 00, 00, 0.20);
+       cursor: pointer;
+       transition: all 200ms ease;
+   }
+
+   .navegacion .activado__dos{
+    color: #67b178;
    }
 
 
+   .navegacion a:hover{
+    transform: scale(1.1);
+    color: #67b178;
+   }
+
 
    .titulo h1 a {
-       color: #467852;
+        color: #419544;
        font-family: 'Tilt Prism', cursive;
        font-size: 1.8rem;
+       margin-left: 3rem;
+       text-shadow: 1px 1px #000000;
+       text-shadow: 0px 3px 10px rgba(232, 219, 134, 0.2);
+       text-decoration: none;
    }
 
 
@@ -79,21 +101,26 @@ body{
 /* DESCRIPCIÓN */
 
 .descripcion{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
-    line-height: 4rem;
+    line-height: 3.2rem;
 }
 
 .descripcion span{
     background: linear-gradient(#323432 ,#75bb86);
     -webkit-background-clip: text;
     color: transparent;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
+
+
 
 hr{
     border: #000000 solid 0.1rem;
     width: 10%;
+    margin-left: 45%;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
 }
 
 
@@ -101,9 +128,8 @@ hr{
 
 .btn{
         border-radius: 4px;
-        background: linear-gradient(to bottom, rgba(11, 11, 11), rgba(96, 90, 90, 0.9));
+        background: linear-gradient(to bottom, rgba(222, 220, 220, 0.9), rgba(232, 232, 232, 0.9));
         border: none;
-        color: #FFFFFF;
         text-align: center;
         font-size: 0.7rem;
         padding: 0.7rem;
@@ -112,7 +138,7 @@ hr{
         cursor: pointer;
         position: absolute;
         top: 60%;
-        right: 80%;
+        right: 79%;
 }
 .btn span {
     cursor: pointer;
@@ -120,6 +146,7 @@ hr{
     position: relative;
     transition: 0.5s;
     font-family: 'Quicksand', sans-serif;
+    color: #419544;
 }
 
 .btn span:after {
@@ -160,6 +187,7 @@ hr{
     height: 60rem;
     opacity: 0.8;
     object-fit: cover;
+    margin-top: 10rem;
 }
 
 .aside{
@@ -175,8 +203,6 @@ hr{
     line-height: 4rem;
     font-family: 'Montserrat', sans-serif;
 }
-
-
 
 
 @media (min-width: 1440px) {
@@ -222,7 +248,7 @@ hr{
         }
         
             
-        .header a{
+        .navegacion a{
             text-decoration: none;
             background: linear-gradient(#d5c872, rgb(196, 199, 196));
             -webkit-background-clip: text;
@@ -359,5 +385,4 @@ hr{
         
         
 }
-
 

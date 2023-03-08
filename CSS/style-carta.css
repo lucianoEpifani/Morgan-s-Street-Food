@@ -1,0 +1,63 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body{
+    background: linear-gradient(#3a3a3a, rgb(167, 165, 165));
+        -webkit-box-shadow: 3px 4px 26px -4px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 3px 4px 26px -4px rgba(0, 0, 0, 0.75);
+        box-shadow: 3px 4px 26px -4px rgba(0, 0, 0, 0.75);
+}
+
+.contenedor__dos{
+    object-fit: cover;
+    -webkit-box-shadow: 3px 4px 26px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 4px 26px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 4px 26px -4px rgba(0, 0, 0, 0.75);
+}
+
+
+.header--menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+.navegacion a {
+    text-decoration: none;
+    background: linear-gradient(#ffffff, rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    text-shadow: 0px 3px 10px rgb(00, 00, 00, 0.20);
+    cursor: pointer;
+    transition: all 200ms ease;
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    top: 5%;
+    left: 47%;
+}
+
+
+.navegacion a:hover {
+    transform: scale(1.1);
+    color: #67b178;
+}

@@ -44,36 +44,36 @@ body{
            url(/IMG/pexels-alleksana-6400028.jpeg);
    }
 
-   .header--menu {
-       display: flex;
-       justify-content: space-evenly;
-       align-items: center;
-       gap: 6rem;
-   }
+ .header--menu {
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     
+ }
 
 
-   .navegacion a{
-       text-decoration: none;
-       background: linear-gradient(#ffffff, rgb(255, 255, 255));
-       -webkit-background-clip: text;
-       color: transparent;
-       font-size: 1rem;
-       font-family: 'Raleway', sans-serif;
-       margin: 1rem;
-       text-shadow: 0px 3px 10px rgb(00, 00, 00, 0.20);
-       cursor: pointer;
-       transition: all 200ms ease;
-   }
+ .navegacion a {
+     text-decoration: none;
+     background: linear-gradient(#ffffff, rgb(255, 255, 255));
+     -webkit-background-clip: text;
+     color: transparent;
+     font-size: 1rem;
+     margin: 1rem;
+     text-shadow: 0px 3px 10px rgb(00, 00, 00, 0.20);
+     cursor: pointer;
+     transition: all 200ms ease;
+     font-family: 'Raleway', sans-serif;
+ }
 
-   .navegacion .activado__dos{
-    color: #67b178;
-   }
+ .navegacion .activado__dos {
+     color: #419544;
+ }
 
 
-   .navegacion a:hover{
-    transform: scale(1.1);
-    color: #67b178;
-   }
+ .navegacion a:hover {
+     transform: scale(1.1);
+     color: #519561;
+ }
 
 
    .titulo h1 a {
@@ -126,10 +126,17 @@ hr{
 
 /* BOTON */
 
+
+.btn:hover{
+    -webkit-box-shadow: 0px 0px 20px 8px rgba(232, 219, 134, 1);
+        -moz-box-shadow: 0px 0px 20px 8px rgba(232, 219, 134, 1);
+        box-shadow: 0px 0px 20px 8px rgba(232, 219, 134, 1);
+        border: #e8db86 solid 0.1rem;
+}
+
 .btn{
         border-radius: 4px;
-        background: linear-gradient(to bottom, rgba(222, 220, 220, 0.9), rgba(232, 232, 232, 0.9));
-        border: none;
+        box-shadow: 5px 5px #444444;
         text-align: center;
         font-size: 0.7rem;
         padding: 0.7rem;
@@ -139,6 +146,7 @@ hr{
         position: absolute;
         top: 60%;
         right: 79%;
+        border: #000 solid 0.1rem;
 }
 .btn span {
     cursor: pointer;
